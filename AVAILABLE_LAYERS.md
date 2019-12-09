@@ -5,7 +5,7 @@
 arn:aws:lambda:eu-central-1:906383545488:layer:signalfx-lambda-nodejs:<VERSION_NUMBER>\
 arn:aws:lambda:us-east-1:906383545488:layer:signalfx-lambda-nodejs:<VERSION_NUMBER>\
 <h3>Python</h3>
-arn:aws:lambda:eu-central-1:906383545488:layer:signalfx-lambda-python:<VERSION_NUMBER>\
+arn:aws:lambda:eu-central-1:906383545488:layer:signalfx-lambda-python:9\
 arn:aws:lambda:us-east-1:906383545488:layer:signalfx-lambda-python:1<VERSION_NUMBER>\
 <h3>Go</h3>
 We do not provide Go layers. 
