@@ -1,34 +1,31 @@
-<h2>Info</h2>
-This repo contains lists of recent versions of AWS Lambda layers that contain SignalFx lambda wrappers for Java, Node.js, C#, Python and Ruby.
+<h2>Overview</h2>
+
+Before you deploy a SignalFx lambda wrapper layer to your AWS account, review the available versions and regions for supported languages.
+
+Additionally, based on your deployment method in AWS, you will need to copy the ARN information. 
+
+---
 
 <h2>Latest available versions of SignalFx Lambda wrapper layers:</h2>
 
-<h3>Java</h3>
+| Supported Languages      | Link to Supported Layer Versions |
+| ----------- | ----------- |
+| Java      | [Click for list of supported layer versions](./java/JAVA.md)     |
+| Node   | [Click for list of supported layer versions](./node/NODEJS.md)        |
+| Python   | [Click for list of supported layer versions](./python/PYTHON.md)        |
+| Ruby   | [Click for list of supported layer versions](./ruby/RUBY.md)        |
+| C#   | [Click for list of supported layer versions](./csharp/CSHARP.md)        |
 
-[Click for list of supported layer versions](./java/JAVA.md)
- 
-<h3>Node.js</h3>
+---
 
-[Click for list of supported layer versions](./node/NODEJS.md)
+<h2>Alternate installation method</h2>
+As an alternate installation option, you can deploy a SignalFx lambda wrapper layer to your AWS account from a published SAM template. To learn more, see [SignalFx Python Lambda Wrapper](https://github.com/signalfx/signalfx-lambda-layers/blob/master/python-sam/README.md).
 
-<h3>Python</h3>
+---
 
-[Click for list of supported layer versions](./python/PYTHON.md)
+<h2> Troubleshooting / request support</h2>
 
-<h3>Go</h3>
-We do not provide Go layers. 
-Please let us know if you have a use case for them. 
-
-<h3>Ruby</h3>
-
-[Click for list of supported layer versions](./ruby/RUBY.md)
-
-<h3>C#</h3>
-
-[Click for list of supported layer versions](./csharp/CSHARP.md)
-
-<h2>Notes</h2>
-As an alternative, you can deploy a SignalFx lambda wrapper layer to your AWS account from published SAM template. To do so, when deploying your Lambda function, please search for SignalFx template in Serverless Application Repository.
+SignalFx does not provide Go layers. To request support for Go layers or to host a layer in another region, please open an issue in the [repository](https://github.com/signalfx/lambda-layer-versions).
 
 
 <!--
