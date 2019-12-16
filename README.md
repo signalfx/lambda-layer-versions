@@ -18,8 +18,21 @@ Additionally, based on your deployment method in AWS, you will need to copy the 
 
 ---
 
-<h2>Alternate installation method</h2>
-As an alternate installation option, you can deploy a SignalFx lambda wrapper layer to your AWS account from a published SAM template. To learn more, see [SignalFx Python Lambda Wrapper](https://github.com/signalfx/signalfx-lambda-layers/blob/master/python-sam/README.md).
+<h2>Installation methods</h2>
+
+At a high-level, there are three ways to add the SignalFx wrapper. 
+
+   * Option 1: Use the wrapper as a regular dependency, and then create a Lambda function based on your artifact containing both code and dependencies.
+      * To learn more about this method, see [SignalFx Python Lambda Wrapper](https://github.com/signalfx/lambda-python/blob/master/README.rst). 
+   * Option 2: In AWS, create a Lambda function, then attach a SignalFx-hosted layer with a wrapper.
+      * To learn more about this method, see [SignalFx Python Lambda Wrapper](https://github.com/signalfx/lambda-python/blob/master/README.rst). 
+   * Option 3: In AWS, create a Lambda function, then create and attach a layer based on a SignalFx SAM (Serverless Application Model) template.
+      * To learn more about this method:
+          1. Open your AWS console. 
+          2. In the top menu, click **Services**. 
+          3. Enter and select **Browse serverless app repository**. 
+          4. Click the **Readme** tab, and review the installation documenation. 
+   
 
 ---
 
