@@ -1,14 +1,14 @@
 <h2>Overview</h2>
 
-Before you deploy a SignalFx lambda wrapper layer to your AWS account, review the available versions and regions for supported languages.
+Before you deploy a SignalFx wrapper to your AWS Lambda layer, review the available versions and regions for supported languages.
 
-Additionally, based on your deployment method in AWS, you will need to copy the ARN information. 
+Additionally, based on your deployment method in AWS, you will need to copy the ARN information.
 
 ---
 
-<h2>Latest available versions of SignalFx Lambda wrapper layers:</h2>
+<h2>Latest available versions of SignalFx Lambda wrapper layers</h2>
 
-| Supported Languages      | Link to Supported Layer Versions |
+| Supported Languages      | Link to Supported Layer Versions and ARN |
 | ----------- | ----------- |
 | Java      | [Click for list of supported layer versions](./java/JAVA.md)     |
 | Node   | [Click for list of supported layer versions](./node/NODEJS.md)        |
@@ -33,7 +33,7 @@ At a high-level, there are three ways to add the SignalFx wrapper.
           1. Open your AWS console. 
           2. In the top menu, click **Services**. 
           3. Enter and select **Browse serverless app repository**. 
-          4. Click the **Readme** tab, and review the installation documenation. 
+          4. Click the **Readme** tab, and review the installation documentation. 
    * Option 3: Use the wrapper as a regular dependency, and then create a Lambda function based on your artifact containing both code and dependencies.   
       * To learn more about this method, see [SignalFx Python Lambda Wrapper](https://github.com/signalfx/lambda-python/blob/master/README.rst). 
 
