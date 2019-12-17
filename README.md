@@ -22,17 +22,21 @@ Additionally, based on your deployment method in AWS, you will need to copy the 
 
 At a high-level, there are three ways to add the SignalFx wrapper. 
 
-   * Option 1: Use the wrapper as a regular dependency, and then create a Lambda function based on your artifact containing both code and dependencies.
+   * Option 1: In AWS, create a Lambda function, then attach a SignalFx-hosted layer with a wrapper.
+      * If you are already using Lambda layers, then SignalFx recommends that you follow this option. 
+      * In this option, you will use a Lambda layer created and hosted by SignalFx.
       * To learn more about this method, see [SignalFx Python Lambda Wrapper](https://github.com/signalfx/lambda-python/blob/master/README.rst). 
-   * Option 2: In AWS, create a Lambda function, then attach a SignalFx-hosted layer with a wrapper.
-      * To learn more about this method, see [SignalFx Python Lambda Wrapper](https://github.com/signalfx/lambda-python/blob/master/README.rst). 
-   * Option 3: In AWS, create a Lambda function, then create and attach a layer based on a SignalFx SAM (Serverless Application Model) template.
-      * To learn more about this method:
+   * Option 2: In AWS, create a Lambda function, then create and attach a layer based on a SignalFx SAM (Serverless Application Model) template.
+      * If you are already using Lambda layers, then SignalFx recommends that you follow this option. 
+      * In this option, you will choose a SignalFx template, and then deploy a copy of the layer.
+      * To learn more about this method: 
           1. Open your AWS console. 
           2. In the top menu, click **Services**. 
           3. Enter and select **Browse serverless app repository**. 
           4. Click the **Readme** tab, and review the installation documenation. 
-   
+   * Option 3: Use the wrapper as a regular dependency, and then create a Lambda function based on your artifact containing both code and dependencies.   
+      * To learn more about this method, see [SignalFx Python Lambda Wrapper](https://github.com/signalfx/lambda-python/blob/master/README.rst). 
+
 
 ---
 
