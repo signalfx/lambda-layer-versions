@@ -11,7 +11,7 @@ Additionally, based on your deployment method in AWS, you will need to copy the 
 | Supported Languages      | Link to Supported Layer Versions |
 | ----------- | ----------- |
 | Java      | [Click for list of supported layer versions](./java/JAVA.md)     |
-| Node   | [Click for list of supported layer versions](./node/NODEJS.md)        |
+| Node   | [Click for list of supported layer versions](./node/NODE.md)        |
 | Python   | [Click for list of supported layer versions](./python/PYTHON.md)        |
 | Ruby   | [Click for list of supported layer versions](./ruby/RUBY.md)        |
 | C#   | [Click for list of supported layer versions](./csharp/CSHARP.md)        |
