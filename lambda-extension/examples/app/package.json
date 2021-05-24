@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Sample nodejs lambda to demonstrate usage of Splunk extension",
+  "main": "app.js",
+  "author": "",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "lodash": "4.17.21"
+  }
+}

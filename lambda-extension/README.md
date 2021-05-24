@@ -60,7 +60,40 @@ You attach the Splunk extension for AWS Lambda to your Lambda function as a laye
 done using: AWS CLI, AWS Console, AWS CloudFormation, etc. Please refer to the corresponding
 documentation for the approach you use.
 
-**_Note:_** Choose the Layer ARN from the same region as your monitored function.
+For example, if you wish to include Splunk extension in a container image:
+1. Download the layer using aws cli:
+    ```
+    aws lambda get-layer-version-by-arn --region us-east-1 \
+    --arn arn:aws:lambda:us-east-1:254067382080:layer:splunk-lambda-extension:1 \
+    | jq -r '.Content.Location' | xargs curl -o extension.zip
+    ```
+   
+2. Copy the layer inside your docker image and configure access token.
+   For example, using the test application in [examples/app](examples/app):
+    
+    ```   
+    FROM public.ecr.aws/lambda/nodejs:12
+ 
+    # Add your application to the image (this adds sample app from examples/app)
+    COPY examples/app/app.js examples/app/package.json /var/task/
+ 
+    # Add the Splunk Extension you downloaded in a previous step
+    COPY extension.zip extension.zip
+    RUN yum install -y unzip && unzip extension.zip -d /opt && rm -f extension.zip
+   
+    # Set environment variables for the extension
+    ENV SPLUNK_ACCESS_TOKEN <SPLUNK_ACCESS_TOKEN>
+    # Set the realm if other than us0
+    # ENV SPLUNK_REALM <SPLUNK_REALM>
+ 
+    # Install NPM dependencies for function
+    RUN npm install
+ 
+    # Set the CMD to your handler
+    CMD [ "app.handler" ] 
+    ```
+  
+**_Note:_** If you want to attach the layer without downloading it (for example, in AWS Console), refer to the Layer ARN from the same region as your monitored function.
 Check [the newest Splunk Extension for AWS Lambda versions](lambda-extension-versions.md)
 for the adequate ARN.
 
