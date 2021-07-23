@@ -1,13 +1,12 @@
-<h1>Splunk APM lambda layers</h1>
+# Splunk APM lambda layers
 
-<h2>Overview</h2>
+## Overview
 
 Before you deploy a Splunk APM lambda layer to your AWS account, review the available versions and regions for supported languages.
 Additionally, based on your deployment method in AWS, you will need to copy the ARN information. 
 
----
 
-<h2>List of Splunk APM lambda layers</h2>
+## List of Splunk APM lambda layers
 
 | Description                | Documentation                                                         | Link to Supported Layer ARNs 
 | -------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------
@@ -19,9 +18,8 @@ Additionally, based on your deployment method in AWS, you will need to copy the 
 | SignalFx C# Wrapper        | [Main README](https://github.com/signalfx/lambda-csharp)              | [List of supported layer versions](./csharp/CSHARP.md)        
 | SignalFx Metrics Extension | [Main README](https://github.com/signalfx/signalfx-extension-wrapper) | [List of supported layer versions](./lambda-extension/lambda-extension-versions.md) 
 
----
 
-<h2>Installation methods</h2>
+## Installation methods
 
 At a high-level, there are three ways to add the Splunk wrapper. 
 
@@ -39,7 +37,3 @@ At a high-level, there are three ways to add the Splunk wrapper.
           4. Click the **Readme** tab, and review the installation documentation. 
    * Option 3 (**only applicable for wrappers**): Use the wrapper as a regular dependency, and then create a Lambda function based on your artifact containing both code and dependencies.   
       * To learn more about this method, see [Splunk Python Lambda Wrapper](https://github.com/signalfx/lambda-python/blob/master/README.rst). 
-
-
----
-
