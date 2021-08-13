@@ -16,7 +16,7 @@ Additionally, based on your deployment method in AWS, you will need to copy the 
 | SignalFx Python Wrapper    | [Main README](https://github.com/signalfx/lambda-python)              | [List of supported layer versions](./python/PYTHON.md)        
 | SignalFx Ruby Wrapper      | [Main README](https://github.com/signalfx/lambda-ruby)                | [List of supported layer versions](./ruby/RUBY.md)        
 | SignalFx C# Wrapper        | [Main README](https://github.com/signalfx/lambda-csharp)              | [List of supported layer versions](./csharp/CSHARP.md)        
-| SignalFx Metrics Extension | [Main README](./lambda-extensions/README.md)                          | [List of supported layer versions](./lambda-extension/lambda-extension-versions.md) 
+| SignalFx Metrics Extension | [Main README](./lambda-extension/README.md)                          | [List of supported layer versions](./lambda-extension/lambda-extension-versions.md) 
 
 
 ## Installation methods
