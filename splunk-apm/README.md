@@ -21,9 +21,8 @@ All wrapper layers are preconfigured to use Splunk as the tracing backend.
     If you want to use this exporter, set these environment variables in your Lambda function code:
     ```
     OTEL_EXPORTER_OTLP_ENDPOINT: <Endpoint URL>
-    SPLUNK_ACCESS_TOKEN: orgAccessToken
     ```
-    Splunk provides also token-authenticated `jaeger-thrift-splunk` exporter for customers that need to use that specific protocol. In order to use it, please set (example endpoint value for SmartAgent):
+    Splunk provides also a token-authenticated `jaeger-thrift-splunk` exporter for customers that need to use that specific protocol. To use it, set the following environment variables:
     ```
     OTEL_TRACES_EXPORTER: jaeger-thrift-splunk
     OTEL_EXPORTER_JAEGER_ENDPOINT: <Endpoint URL>
@@ -46,6 +45,8 @@ All wrapper layers are preconfigured to use Splunk as the tracing backend.
 5. Logging
     
     Logging is controller with `OTEL_LAMBDA_LOG_LEVEL` environment variable. Default set to `WARN`. When set to `DEBUG`, the logging exporter is added to traces exporter in order to help verify exported data.
+    
+    > Enabling `DEBUG` generates additional logs, which may in turn increase AWS CloudWatch costs. 
 
 ### Java wrapper
 
@@ -84,4 +85,4 @@ OTEL_EXPORTER_JAEGER_ENDPOINT: https://ingest.us0.signalfx.com/v2/trace
 
 ## License and versioning
 
-The project is released under the terms of the Apache Software License version 2.0. For more details, see [the license file](./LICENSE).
+The project is released under the terms of the Apache Software License version 2.0.
