@@ -22,7 +22,7 @@ All wrapper layers are preconfigured to use Splunk as the tracing backend.
     ```
     OTEL_EXPORTER_OTLP_ENDPOINT: <Endpoint URL>
     ```
-    Splunk provides also token-authenticated `jaeger-thrift-splunk` exporter for customers that need to use that specific protocol. In order to use it, please set:
+    Splunk provides also a token-authenticated `jaeger-thrift-splunk` exporter for customers that need to use that specific protocol. To use it, set the following environment variables:
     ```
     OTEL_TRACES_EXPORTER: jaeger-thrift-splunk
     OTEL_EXPORTER_JAEGER_ENDPOINT: <Endpoint URL>
