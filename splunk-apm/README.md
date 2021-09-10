@@ -46,7 +46,7 @@ All wrapper layers are preconfigured to use Splunk as the tracing backend.
     
     Logging is controller with `OTEL_LAMBDA_LOG_LEVEL` environment variable. Default set to `WARN`. When set to `DEBUG`, the logging exporter is added to traces exporter in order to help verify exported data.
     
-    Please note that enabling `DEBUG` will generate additional logs which may in turn increase AWS CloudWatch costs. 
+    > Enabling `DEBUG` generates additional logs, which may in turn increase AWS CloudWatch costs. 
 
 ### Java wrapper
 
