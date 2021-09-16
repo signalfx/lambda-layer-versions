@@ -49,7 +49,7 @@ All wrapper layers are preconfigured to use Splunk as the tracing backend.
 
 5. OpenTelemetry Metrics export
     
-    By default, OTEL metrics are disabled.
+    By default, OTel metrics are disabled.
 
 6. SignalFx Metrics export
 
