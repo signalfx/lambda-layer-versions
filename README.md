@@ -1,23 +1,23 @@
-# Splunk APM lambda layers
+# Splunk lambda layers
 
 ## Overview
 
-Before you deploy a Splunk APM lambda layer to your AWS account, review the available versions and regions for supported languages.
+Before you deploy a Splunk lambda layer to your AWS account, review the available versions and regions for supported languages.
 Additionally, based on your deployment method in AWS, you will need to copy the ARN information. 
 
 
-## List of Splunk APM lambda layers
+## List of Splunk lambda layers
 
-| Description                | Documentation                                                                      | Link to Supported Layer ARNs 
-| -------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------
-| OpenTelemetry Java Wrapper | [Main README](https://github.com/signalfx/splunk-otel-java-lambda)                 | [List of supported layer versions](./otel-java/OTEL-JAVA.md)     
-| SignalFx Java Wrapper      | [Main README](https://github.com/signalfx/lambda-java)                             | [List of supported layer versions](./java/JAVA.md)     
-| SignalFx Node Wrapper      | [Main README](https://github.com/signalfx/lambda-nodejs)                           | [List of supported layer versions](./node/NODE.md)        
-| SignalFx Python Wrapper    | [Main README](https://github.com/signalfx/lambda-python)                           | [List of supported layer versions](./python/PYTHON.md)        
-| SignalFx Ruby Wrapper      | [Main README](https://github.com/signalfx/lambda-ruby)                             | [List of supported layer versions](./ruby/RUBY.md)        
-| SignalFx C# Wrapper        | [Main README](https://github.com/signalfx/lambda-csharp)                           | [List of supported layer versions](./csharp/CSHARP.md)        
-| SignalFx Metrics Extension | [Main README](https://github.com/signalfx/splunk-extension-wrapper/tree/main/docs) | [List of supported layer versions](./lambda-extension/lambda-extension-versions.md)
-| Splunk APM                 | [Main README](./splunk-apm/README.md)                                              | [List of supported layer versions](./splunk-apm/splunk-apm.md) 
+| Description                       | Documentation                                                                      | Link to Supported Layer ARNs 
+| --------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------
+| OpenTelemetry Java Wrapper        | [Main README](https://github.com/signalfx/splunk-otel-java-lambda)                 | [List of supported layer versions](./otel-java/OTEL-JAVA.md)     
+| SignalFx Java Wrapper             | [Main README](https://github.com/signalfx/lambda-java)                             | [List of supported layer versions](./java/JAVA.md)     
+| SignalFx Node Wrapper             | [Main README](https://github.com/signalfx/lambda-nodejs)                           | [List of supported layer versions](./node/NODE.md)        
+| SignalFx Python Wrapper           | [Main README](https://github.com/signalfx/lambda-python)                           | [List of supported layer versions](./python/PYTHON.md)        
+| SignalFx Ruby Wrapper             | [Main README](https://github.com/signalfx/lambda-ruby)                             | [List of supported layer versions](./ruby/RUBY.md)        
+| SignalFx C# Wrapper               | [Main README](https://github.com/signalfx/lambda-csharp)                           | [List of supported layer versions](./csharp/CSHARP.md)        
+| SignalFx Metrics Extension        | [Main README](https://github.com/signalfx/splunk-extension-wrapper/tree/main/docs) | [List of supported layer versions](./lambda-extension/lambda-extension-versions.md)
+| Splunk OpenTelemetry Lambda Layer | [Main README](./splunk-apm/README.md)                                              | [List of supported layer versions](./splunk-apm/splunk-apm.md) 
 
 
 ## Installation methods

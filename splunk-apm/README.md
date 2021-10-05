@@ -1,6 +1,6 @@
-# Splunk APM layer for AWS lambda
+# Splunk OpenTelemetry Lambda Layer
 
-Splunk APM layer for AWS lambda contains various components enabling seamless integration of lambdas with metrics and traces. The components come preconfigured to use Splunk as the backend (direct ingest or SmartAgent). Users can enhance their existing Lambda functions by adding Splunk-managed layer directly. Layer ARNs [are published here](./splunk-apm.md).
+Splunk OpenTelemetry Lambda Layer for AWS lambda enables seamless instrumentation of lambdas to collect metrics and traces. All components are preconfigured to use Splunk Observability Cloud as the backend, either through direct ingest or via the Smart Agent). Users can enhance their existing Lambda functions by adding the Splunk-managed layer directly. Layer ARNs [are published here](./splunk-apm.md).
 
 ## Get started 
 
