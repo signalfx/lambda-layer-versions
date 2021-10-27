@@ -22,7 +22,7 @@ All components are preconfigured to use Splunk as the tracing backend.
 2. Traces export
 
     By default, all wrappers use the OTLP/gRPC exporter. 
-    The endpoint (`OTEL_EXPORTER_OTLP_ENDPOINT`) will be set to `https://ingest.${SPLUNK_REALM}.signalfx.com/v2/trace/otlp`, the direct ingest URL for Splunk Observability Cloud if `SPLUNK_REALM` property is set as well. 
+    If the `SPLUNK_REALM` environment variable is set, the value of  the`OTEL_EXPORTER_OTLP_ENDPOINT` environment variable is `https://ingest.${SPLUNK_REALM}.signalfx.com/v2/trace/otlp`, the direct ingest URL for Splunk Observability Cloud. 
     To make it work, you need to set following variables:
      ```
      SPLUNK_ACCESS_TOKEN: <org_access_token>
