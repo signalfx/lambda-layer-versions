@@ -38,3 +38,5 @@ At a high-level, there are three ways to add the Splunk wrapper / extension.
           4. Click the **Readme** tab, and review the installation documentation. 
    * Option 3 (**only applicable for wrappers**): Use the wrapper as a regular dependency, and then create a Lambda function based on your artifact containing both code and dependencies.   
       * To learn more about this method, see [Splunk Python Lambda Wrapper](https://github.com/signalfx/lambda-python/blob/master/README.rst). 
+
+>ℹ️&nbsp;&nbsp;SignalFx was acquired by Splunk in October 2019. See [Splunk SignalFx](https://www.splunk.com/en_us/investor-relations/acquisitions/signalfx.html) for more information.
