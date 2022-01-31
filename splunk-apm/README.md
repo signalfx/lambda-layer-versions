@@ -71,6 +71,14 @@ All components are preconfigured to use Splunk Observability Cloud as the tracin
     Server-Timing: traceparent;desc="00-<trace-id>-<span-id>-<trace-flags>"
     ```
 
+8. Splunk Metrics export
+
+   By default, Splunk metrics are enabled with Splunk Metrics extension. Following configuration environment variables are required:
+   ```
+   SPLUNK_REALM: <Splunk Realm>
+   SPLUNK_ACCESS_TOKEN: <Access token>
+   ```      
+
 ### Java wrapper
 
 The Java wrapper is based on OpenTelemetry Java version 1.10.0. 
