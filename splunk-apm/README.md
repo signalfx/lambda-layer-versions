@@ -9,6 +9,7 @@ The following components are currently supported:
 - [Python wrapper](#python-wrapper)
 - [Node.js wrapper](#nodejs-wrapper)
 - [Ruby wrapper](#ruby-wrapper)
+- [Metrics extension](#metrics-extension)
 
 ### Configuration
 
