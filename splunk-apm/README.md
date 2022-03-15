@@ -109,6 +109,18 @@ The official documentation of the upstream layer can be found [here](https://git
 2. Context propagation
 
     For more information about available context propagators, see the [Propagator settings](https://github.com/signalfx/splunk-otel-python/blob/main/docs/advanced-config.md#trace-propagation-configuration) for the Splunk distribution of OpenTelemetry Python.
+    
+3. Serverless framework support
+
+    The Serverless Framework (https://www.serverless.com/) offers features that can impact OpenTelemetry tracing for you Python lambda. Review following documented cases:
+    
+    * Requirements ZIP
+    
+      The feature (https://github.com/serverless/serverless-python-requirements#dealing-with-lambdas-size-limitations) allows packing and deploying lambda dependencies as a separate ZIP file. In order to allow instrumentation of such packages, set `SPLUNK_LAMBDA_SLS_ZIP` environment variable to `true` (default is `false`).
+        
+    * Slim package
+    
+      The feature (https://github.com/serverless/serverless-python-requirements#slim-package) downsizes lambda package by removing some files, including `dist-info` folders. These meta files are required by the OpenTelemetry Python autoinstrumentation. Therefore either the `slim` option needs to be disabled or the custom pattern (`slimPatternsAppendDefaults: false`) option needs to be enabled. Consult `serverless` documentation for additional details. 
 
 ### Node.js wrapper
 
